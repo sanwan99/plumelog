@@ -1,0 +1,2 @@
+traceIdFilterP=TraceIdProviderFilter
+traceIdFilterC=TraceIdConsumerFilter

@@ -21,10 +21,9 @@
         <module>nglog-core</module>
         <module>nglog-logback</module>
         <module>plumelog-server</module>
-        <module>plumelog-logback</module>
-        <module>plumelog-dubbo</module>
+        <module>nglog-dubbo</module>
         <module>nglog-trace</module>
-        <module>plumelog-http</module>
+        <module>nglog-http</module>
     </modules>
     <dependencyManagement>
         <dependencies>
