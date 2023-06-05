@@ -20,9 +20,7 @@
     <modules>
         <module>plumelog-core</module>
         <module>plumelog-server</module>
-        <module>plumelog-log4j</module>
         <module>plumelog-logback</module>
-        <module>plumelog-log4j2</module>
         <module>plumelog-dubbo</module>
         <module>plumelog-trace</module>
         <module>plumelog-http</module>
@@ -37,16 +35,6 @@
             <dependency>
                 <groupId>com.plumelog</groupId>
                 <artifactId>plumelog-logback</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.plumelog</groupId>
-                <artifactId>plumelog-log4j</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.plumelog</groupId>
-                <artifactId>plumelog-log4j2</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
