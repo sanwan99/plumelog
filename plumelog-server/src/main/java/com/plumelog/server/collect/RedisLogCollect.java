@@ -1,12 +1,13 @@
 package com.plumelog.server.collect;
 
 import com.alibaba.fastjson.JSON;
-import com.plumelog.core.AbstractClient;
-import com.plumelog.core.constant.LogMessageConstant;
-import com.plumelog.core.dto.RunLogCompressMessage;
-import com.plumelog.core.exception.LogQueueConnectException;
-import com.plumelog.core.util.GfJsonUtil;
-import com.plumelog.core.util.LZ4Util;
+
+import com.nglog.core.AbstractClient;
+import com.nglog.core.constant.LogMessageConstant;
+import com.nglog.core.dto.RunLogCompressMessage;
+import com.nglog.core.exception.LogQueueConnectException;
+import com.nglog.core.util.GfJsonUtil;
+import com.nglog.core.util.LZ4Util;
 import com.plumelog.server.InitConfig;
 import com.plumelog.server.client.ElasticLowerClient;
 import org.slf4j.LoggerFactory;

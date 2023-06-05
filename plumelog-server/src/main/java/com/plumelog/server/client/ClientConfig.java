@@ -1,11 +1,12 @@
 package com.plumelog.server.client;
 
-import com.plumelog.core.AbstractClient;
-import com.plumelog.core.constant.LogMessageConstant;
-import com.plumelog.core.kafka.KafkaConsumerClient;
-import com.plumelog.core.redis.RedisClient;
-import com.plumelog.core.redis.RedisClusterClient;
-import com.plumelog.core.redis.RedisSentinelClient;
+
+import com.nglog.core.AbstractClient;
+import com.nglog.core.constant.LogMessageConstant;
+import com.nglog.core.kafka.KafkaConsumerClient;
+import com.nglog.core.redis.RedisClient;
+import com.nglog.core.redis.RedisClusterClient;
+import com.nglog.core.redis.RedisSentinelClient;
 import com.plumelog.server.CollectStartBean;
 import com.plumelog.server.InitConfig;
 import org.apache.kafka.clients.consumer.KafkaConsumer;

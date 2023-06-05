@@ -1,7 +1,8 @@
 package com.plumelog.server;
 
-import com.plumelog.core.AbstractClient;
-import com.plumelog.core.constant.LogMessageConstant;
+
+import com.nglog.core.AbstractClient;
+import com.nglog.core.constant.LogMessageConstant;
 import com.plumelog.server.client.ElasticLowerClient;
 import com.plumelog.server.collect.KafkaLogCollect;
 import com.plumelog.server.collect.RedisLogCollect;

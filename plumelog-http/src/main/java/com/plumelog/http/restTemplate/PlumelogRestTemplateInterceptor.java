@@ -1,6 +1,7 @@
 package com.plumelog.http.restTemplate;
 
-import com.plumelog.core.TraceId;
+
+import com.nglog.core.TraceId;
 import org.springframework.http.HttpRequest;
 import org.springframework.http.client.ClientHttpRequestExecution;
 import org.springframework.http.client.ClientHttpRequestInterceptor;
@@ -8,7 +9,8 @@ import org.springframework.http.client.ClientHttpResponse;
 
 import java.io.IOException;
 
-import static com.plumelog.core.constant.LogMessageConstant.TRACE_ID;
+import static com.nglog.core.constant.LogMessageConstant.TRACE_ID;
+
 
 /**
  * @author YIJIUE

@@ -1,6 +1,7 @@
 package com.plumelog.server.monitor;
 
-import com.plumelog.core.dto.RunLogMessage;
+
+import com.nglog.core.dto.RunLogMessage;
 import org.springframework.context.ApplicationEvent;
 
 import java.util.List;

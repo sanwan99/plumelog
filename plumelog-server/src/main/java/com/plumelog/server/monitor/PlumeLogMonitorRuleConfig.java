@@ -1,9 +1,10 @@
 package com.plumelog.server.monitor;
 
 import com.alibaba.fastjson.JSON;
-import com.plumelog.core.AbstractClient;
-import com.plumelog.core.constant.LogMessageConstant;
-import com.plumelog.core.dto.WarningRule;
+
+import com.nglog.core.AbstractClient;
+import com.nglog.core.constant.LogMessageConstant;
+import com.nglog.core.dto.WarningRule;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

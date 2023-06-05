@@ -1,11 +1,12 @@
 package com.plumelog.server.controller;
 
-import com.plumelog.core.AbstractClient;
-import com.plumelog.core.LogMessage;
-import com.plumelog.core.constant.LogMessageConstant;
-import com.plumelog.core.dto.WarningRule;
-import com.plumelog.core.dto.WarningRuleDto;
-import com.plumelog.core.util.GfJsonUtil;
+
+import com.nglog.core.AbstractClient;
+import com.nglog.core.LogMessage;
+import com.nglog.core.constant.LogMessageConstant;
+import com.nglog.core.dto.WarningRule;
+import com.nglog.core.dto.WarningRuleDto;
+import com.nglog.core.util.GfJsonUtil;
 import com.plumelog.server.InitConfig;
 import com.plumelog.server.cache.AppNameCache;
 import com.plumelog.server.client.ElasticLowerClient;

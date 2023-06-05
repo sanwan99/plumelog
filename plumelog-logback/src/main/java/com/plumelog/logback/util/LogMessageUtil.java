@@ -3,16 +3,17 @@ package com.plumelog.logback.util;
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.classic.spi.ThrowableProxy;
-import com.plumelog.core.LogMessageThreadLocal;
-import com.plumelog.core.TraceId;
-import com.plumelog.core.TraceMessage;
-import com.plumelog.core.constant.LogMessageConstant;
-import com.plumelog.core.dto.BaseLogMessage;
-import com.plumelog.core.dto.RunLogMessage;
-import com.plumelog.core.util.DateUtil;
-import com.plumelog.core.util.GfJsonUtil;
-import com.plumelog.core.util.LogExceptionStackTrace;
-import com.plumelog.core.util.TraceLogMessageFactory;
+
+import com.nglog.core.LogMessageThreadLocal;
+import com.nglog.core.TraceId;
+import com.nglog.core.TraceMessage;
+import com.nglog.core.constant.LogMessageConstant;
+import com.nglog.core.dto.BaseLogMessage;
+import com.nglog.core.dto.RunLogMessage;
+import com.nglog.core.util.DateUtil;
+import com.nglog.core.util.GfJsonUtil;
+import com.nglog.core.util.LogExceptionStackTrace;
+import com.nglog.core.util.TraceLogMessageFactory;
 import org.slf4j.helpers.MessageFormatter;
 
 import java.util.Map;

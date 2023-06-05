@@ -1,10 +1,12 @@
 package com.plumelog.http.openfeign;
 
-import com.plumelog.core.TraceId;
+
+import com.nglog.core.TraceId;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 
-import static com.plumelog.core.constant.LogMessageConstant.TRACE_ID;
+import static com.nglog.core.constant.LogMessageConstant.TRACE_ID;
+
 
 /**
  * @author YIJIUE

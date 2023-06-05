@@ -1,9 +1,10 @@
 package com.plumelog.server.collect;
 
 import com.alibaba.fastjson.JSON;
-import com.plumelog.core.constant.LogMessageConstant;
-import com.plumelog.core.dto.RunLogMessage;
-import com.plumelog.core.util.ThreadPoolUtil;
+
+import com.nglog.core.constant.LogMessageConstant;
+import com.nglog.core.dto.RunLogMessage;
+import com.nglog.core.util.ThreadPoolUtil;
 import com.plumelog.server.InitConfig;
 import com.plumelog.server.cache.AppNameCache;
 import com.plumelog.server.client.ElasticLowerClient;

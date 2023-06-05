@@ -18,7 +18,7 @@
         <elasticsearch.version>7.7.0</elasticsearch.version>
     </properties>
     <modules>
-        <module>plumelog-core</module>
+        <module>nglog-core</module>
         <module>plumelog-server</module>
         <module>plumelog-logback</module>
         <module>plumelog-dubbo</module>
@@ -29,7 +29,7 @@
         <dependencies>
             <dependency>
                 <groupId>com.plumelog</groupId>
-                <artifactId>plumelog-core</artifactId>
+                <artifactId>nglog-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

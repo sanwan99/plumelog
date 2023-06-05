@@ -1,6 +1,7 @@
 package com.plumelog.http.okhttp;
 
-import com.plumelog.core.TraceId;
+
+import com.nglog.core.TraceId;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -8,7 +9,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 
-import static com.plumelog.core.constant.LogMessageConstant.TRACE_ID;
+import static com.nglog.core.constant.LogMessageConstant.TRACE_ID;
+
 
 /**
  * @author YIJIUE

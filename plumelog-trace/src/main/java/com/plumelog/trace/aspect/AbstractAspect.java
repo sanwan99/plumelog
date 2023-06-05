@@ -1,10 +1,11 @@
 package com.plumelog.trace.aspect;
 
-import com.plumelog.core.LogMessageThreadLocal;
-import com.plumelog.core.TraceId;
-import com.plumelog.core.TraceMessage;
-import com.plumelog.core.constant.LogMessageConstant;
-import com.plumelog.core.util.GfJsonUtil;
+
+import com.nglog.core.LogMessageThreadLocal;
+import com.nglog.core.TraceId;
+import com.nglog.core.TraceMessage;
+import com.nglog.core.constant.LogMessageConstant;
+import com.nglog.core.util.GfJsonUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;

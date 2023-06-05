@@ -1,7 +1,7 @@
 package com.plumelog.dubbo.filter;
 
-import com.plumelog.core.TraceId;
-import com.plumelog.core.util.IdWorker;
+import com.nglog.core.TraceId;
+import com.nglog.core.util.IdWorker;
 import org.apache.dubbo.common.extension.Activate;
 import org.apache.dubbo.rpc.*;
 import org.springframework.util.StringUtils;

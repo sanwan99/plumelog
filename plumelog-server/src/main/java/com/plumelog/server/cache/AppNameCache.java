@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class AppNameCache {
 
-    public static final String APP_NAME_SET = "plumelog:appname:set";
+    public static final String APP_NAME_SET = "nglog:appname:set";
 
     public static Map<String, Set<String>> appName = new ConcurrentHashMap<>();
 }

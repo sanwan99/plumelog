@@ -3,13 +3,14 @@ package com.plumelog.logback.appender;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.AppenderBase;
-import com.plumelog.core.MessageAppenderFactory;
-import com.plumelog.core.constant.LogMessageConstant;
-import com.plumelog.core.dto.BaseLogMessage;
-import com.plumelog.core.dto.RunLogMessage;
-import com.plumelog.core.kafka.KafkaProducerClient;
-import com.plumelog.core.util.GfJsonUtil;
-import com.plumelog.core.util.ThreadPoolUtil;
+
+import com.nglog.core.MessageAppenderFactory;
+import com.nglog.core.constant.LogMessageConstant;
+import com.nglog.core.dto.BaseLogMessage;
+import com.nglog.core.dto.RunLogMessage;
+import com.nglog.core.kafka.KafkaProducerClient;
+import com.nglog.core.util.GfJsonUtil;
+import com.nglog.core.util.ThreadPoolUtil;
 import com.plumelog.logback.util.LogMessageUtil;
 
 import java.util.concurrent.ThreadPoolExecutor;

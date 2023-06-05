@@ -1,6 +1,7 @@
 package com.plumelog.server.monitor;
 
-import com.plumelog.core.dto.WarningRule;
+
+import com.nglog.core.dto.WarningRule;
 
 /**
  * @author chenlongfei

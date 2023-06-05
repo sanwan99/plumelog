@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>com.plumelog</groupId>
-            <artifactId>plumelog-core</artifactId>
+            <artifactId>nglog-core</artifactId>
         </dependency>
         <dependency>
             <groupId>com.plumelog</groupId>

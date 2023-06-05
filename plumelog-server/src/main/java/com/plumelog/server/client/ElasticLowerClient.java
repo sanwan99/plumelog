@@ -1,7 +1,7 @@
 package com.plumelog.server.client;
 
-import com.plumelog.core.constant.LogMessageConstant;
-import com.plumelog.core.util.ThreadPoolUtil;
+import com.nglog.core.constant.LogMessageConstant;
+import com.nglog.core.util.ThreadPoolUtil;
 import com.plumelog.server.InitConfig;
 import com.plumelog.server.client.http.SkipHostnameVerifier;
 import com.plumelog.server.client.http.SkipSslVerificationHttpRequestFactory;

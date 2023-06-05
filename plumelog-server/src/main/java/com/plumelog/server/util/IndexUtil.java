@@ -1,6 +1,7 @@
 package com.plumelog.server.util;
 
-import com.plumelog.core.constant.LogMessageConstant;
+
+import com.nglog.core.constant.LogMessageConstant;
 import com.plumelog.server.InitConfig;
 
 public class IndexUtil {

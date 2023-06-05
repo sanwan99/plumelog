@@ -1,6 +1,7 @@
 package com.plumelog.server.monitor;
 
-import com.plumelog.core.util.GfJsonUtil;
+
+import com.nglog.core.util.GfJsonUtil;
 import com.plumelog.server.util.HttpClient;
 
 import java.util.ArrayList;

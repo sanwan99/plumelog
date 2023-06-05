@@ -1,6 +1,7 @@
 package com.plumelog.server.collect;
 
-import com.plumelog.core.constant.LogMessageConstant;
+
+import com.nglog.core.constant.LogMessageConstant;
 import com.plumelog.server.client.ElasticLowerClient;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
