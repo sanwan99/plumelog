@@ -20,7 +20,7 @@
     <modules>
         <module>nglog-core</module>
         <module>nglog-logback</module>
-        <module>plumelog-server</module>
+        <module>nglog-server</module>
         <module>nglog-dubbo</module>
         <module>nglog-trace</module>
         <module>nglog-http</module>
