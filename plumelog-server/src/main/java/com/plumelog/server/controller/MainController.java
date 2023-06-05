@@ -99,7 +99,6 @@ public class MainController {
         result.setMessage("get no logs!");
         return result;
     }
-
     @RequestMapping({"/sendLog", "/plumelogServer/sendLog"})
     public Result sendLog(@RequestBody List<LogMessage> logs, String logKey) {
         Result result = new Result();
@@ -120,7 +119,6 @@ public class MainController {
         }
         return result;
     }
-
     @RequestMapping({"/queryAppName", "/plumelog/queryAppName"})
     public String queryAppName(@RequestBody String queryStr) {
 
@@ -130,7 +128,6 @@ public class MainController {
             indexs[i] = IndexUtil.getRunLogIndex(
                     System.currentTimeMillis() - i * InitConfig.MILLS_ONE_DAY) + "*";
         }
-
         // 检查ES索引是否存在
         List<String> reindexs = elasticLowerClient.getExistIndices(indexs);
         String indexStr = String.join(",", reindexs);
@@ -140,7 +137,6 @@ public class MainController {
         String url = "/" + indexStr + "/_search?from=0&size=0";
         logger.info("queryURL:" + url);
         logger.info("queryStr:" + queryStr);
-
         try {
             return elasticLowerClient.get(url, queryStr);
         } catch (Exception e) {
@@ -149,7 +145,6 @@ public class MainController {
                 queryStr = queryStr.replaceAll("appNameWithEnv", "appName");
                 logger.info("queryURL:" + url);
                 logger.info("queryStr:" + queryStr);
-
                 try {
                     return elasticLowerClient.get(url, queryStr);
                 } catch (Exception ex) {
@@ -161,7 +156,6 @@ public class MainController {
             return "";
         }
     }
-
     @RequestMapping({"/clientQuery", "/plumelog/clientQuery"})
     public String clientQuery(@RequestBody String queryStr, String size, String from,
                               String clientStartDate, String clientEndDate, String trace) {
@@ -224,12 +218,10 @@ public class MainController {
                     return "";
                 }
             }
-
             logger.error("clientQuery fail!", e);
             return "";
         }
     }
-
     @RequestMapping({"/query", "/plumelog/query"})
     public String query(@RequestBody String queryStr, String index, String size, String from, String range) {
 
