@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.plumelog</groupId>
-    <artifactId>plumelog</artifactId>
+    <groupId>com.nglog</groupId>
+    <artifactId>nglog</artifactId>
     <packaging>pom</packaging>
     <version>3.4.2</version>
-    <name>plumelog</name>
-    <description>The parent project of plumelog</description>
+    <name>nglog</name>
+    <description>The parent project of nglog</description>
     <url>https://gitee.com/frankchenlong/plumelog</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -19,27 +19,28 @@
     </properties>
     <modules>
         <module>nglog-core</module>
+        <module>nglog-logback</module>
         <module>plumelog-server</module>
         <module>plumelog-logback</module>
         <module>plumelog-dubbo</module>
-        <module>plumelog-trace</module>
+        <module>nglog-trace</module>
         <module>plumelog-http</module>
     </modules>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.plumelog</groupId>
+                <groupId>com.nglog</groupId>
                 <artifactId>nglog-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.plumelog</groupId>
-                <artifactId>plumelog-logback</artifactId>
+                <groupId>com.nglog</groupId>
+                <artifactId>nglog-logback</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.plumelog</groupId>
-                <artifactId>plumelog-trace</artifactId>
+                <groupId>com.nglog</groupId>
+                <artifactId>nglog-trace</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

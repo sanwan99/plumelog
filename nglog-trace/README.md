@@ -53,17 +53,18 @@
 6. 如果不想再自己的控制台或者文件输出里看到trace日志可以通过添加过滤器过滤掉,logback的例子如下
 
 ```xml
-    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
-        <!--此过滤器过滤掉所有的trace日志，3.4.1版本logback自带的过滤类-->
-        <filter class="com.plumelog.logback.util.FilterSyncLogger">
-            <level>info</level>
-            <filterPackage>com.plumelog.trace.aspect.AbstractAspect</filterPackage>
-        </filter>
-        <encoder>
-            <Pattern>${CONSOLE_LOG_PATTERN}</Pattern>\
-            <charset>UTF-8</charset>
-        </encoder>
-    </appender>
+
+<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <!--此过滤器过滤掉所有的trace日志，3.4.1版本logback自带的过滤类-->
+    <filter class="com.plumelog.logback.util.FilterSyncLogger">
+        <level>info</level>
+        <filterPackage>AbstractAspectcom.nglog.trace.aspect.AbstractAspect</filterPackage>
+    </filter>
+    <encoder>
+        <Pattern>${CONSOLE_LOG_PATTERN}</Pattern>\
+        <charset>UTF-8</charset>
+    </encoder>
+</appender>
 ```
 3.4之前的版本可以复制以下代码创建一个过滤器再配置到logback里面去
 
@@ -77,7 +78,7 @@ public class FilterSyncLogger extends Filter<ILoggingEvent> {
     @Override
     public FilterReply decide(ILoggingEvent event) {
 
-        String filterPackage = "com.plumelog.trace.aspect.AbstractAspect";
+        String filterPackage = "AbstractAspect";
 
         if (getPackName(event.getLoggerName()).equals(filterPackage)
                 || getPackName(event.getLoggerName()).equals(filterPackage)) {

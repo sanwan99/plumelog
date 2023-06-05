@@ -1,4 +1,4 @@
-package com.plumelog.trace.annotation;
+package com.nglog.trace.annotation;
 
 import java.lang.annotation.*;
 

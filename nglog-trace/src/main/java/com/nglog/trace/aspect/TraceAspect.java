@@ -1,4 +1,4 @@
-package com.plumelog.trace.aspect;
+package com.nglog.trace.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 @Component
 @ConditionalOnMissingBean(value = AbstractAspect.class, ignored = TraceAspect.class)
 public class TraceAspect extends AbstractAspect {
-    @Around("@annotation(com.plumelog.trace.annotation.Trace))")
+    @Around("@annotation(com.nglog.trace.annotation.Trace))")
     public Object around(JoinPoint joinPoint) throws Throwable {
         return aroundExecute(joinPoint);
     }

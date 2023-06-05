@@ -1,4 +1,4 @@
-package com.plumelog.trace.aspect;
+package com.nglog.trace.aspect;
 
 
 import com.nglog.core.LogMessageThreadLocal;
