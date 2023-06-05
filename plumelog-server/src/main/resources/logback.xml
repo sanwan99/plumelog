@@ -26,7 +26,7 @@
             <filterPackage>com.plumelog.trace.aspect.AbstractAspect</filterPackage>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>logs/plumelog-server.log.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>logs/plumelog-server%d{yyyy-MM-dd}.log</FileNamePattern>
             <MaxHistory>3</MaxHistory>
         </rollingPolicy>
         <encoder>
