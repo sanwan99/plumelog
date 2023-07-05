@@ -44,7 +44,7 @@ public class CollectStartBean implements InitializingBean {
     @Autowired
     private ApplicationEventPublisher applicationEventPublisher;
 
-    @Value("${plumelog.redis.compressor:false}")
+    @Value("${nglog.redis.compressor:false}")
     private Boolean compressor;
 
     private void serverStart() {
@@ -71,7 +71,7 @@ public class CollectStartBean implements InitializingBean {
             autoCreatIndice();
             serverStart();
         } catch (Exception e) {
-            logger.error("plumelog server starting failed!", e);
+            logger.error("nglog server starting failed!", e);
         }
     }
 

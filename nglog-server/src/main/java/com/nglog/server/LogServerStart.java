@@ -19,7 +19,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @EnableAsync
 @EnableScheduling
-@ComponentScan(basePackages = {"com.plumelog"})
+@ComponentScan(basePackages = {"com.nglog"})
 public class LogServerStart {
 
     public static void main(String[] args) {

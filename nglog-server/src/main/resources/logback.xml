@@ -21,12 +21,12 @@
     </appender>
     <!-- 按照每天生成日志文件 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <filter class="com.plumelog.logback.util.FilterSyncLogger">
+        <filter class="com.nglog.logback.util.FilterSyncLogger">
             <level>info</level>
             <filterPackage>AbstractAspect</filterPackage>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>logs/plumelog-server%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>logs/nglog-server%d{yyyy-MM-dd}.log</FileNamePattern>
             <MaxHistory>3</MaxHistory>
         </rollingPolicy>
         <encoder>

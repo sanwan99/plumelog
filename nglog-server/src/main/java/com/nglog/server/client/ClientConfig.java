@@ -30,73 +30,73 @@ import java.time.ZoneId;
 @Configuration
 public class ClientConfig implements InitializingBean {
     private static final org.slf4j.Logger logger = LoggerFactory.getLogger(CollectStartBean.class);
-    @Value("${plumelog.maxSendSize:5000}")
+    @Value("${nglog.maxSendSize:5000}")
     public int maxSendSize = 5000;
-    @Value("${plumelog.interval:100}")
+    @Value("${nglog.interval:100}")
     public int interval = 100;
-    @Value("${plumelog.kafka.kafkaGroupName:logConsumer}")
+    @Value("${nglog.kafka.kafkaGroupName:logConsumer}")
     public String kafkaGroupName = "logConsumer";
-    @Value("${plumelog.model:redis}")
+    @Value("${nglog.model:redis}")
     private String model;
-    @Value("${plumelog.kafka.kafkaHosts:}")
+    @Value("${nglog.kafka.kafkaHosts:}")
     private String kafkaHosts;
     /**
      * 支持携带协议，如：http、https
      */
-    @Value("${plumelog.es.esHosts:}")
+    @Value("${nglog.es.esHosts:}")
     private String esHosts;
     /**
      * 信任自签证书
      * <p>默认：true
      */
-    @Value("${plumelog.es.trustSelfSigned:true}")
+    @Value("${nglog.es.trustSelfSigned:true}")
     private boolean trustSelfSigned = true;
     /**
      * hostname验证
      * <p>默认：false
      */
-    @Value("${plumelog.es.hostnameVerification:false}")
+    @Value("${nglog.es.hostnameVerification:false}")
     private boolean hostnameVerification = false;
-    @Value("${plumelog.es.indexType:}")
+    @Value("${nglog.es.indexType:}")
     private String indexType;
-    @Value("${plumelog.es.userName:}")
+    @Value("${nglog.es.userName:}")
     private String esUserName;
-    @Value("${plumelog.es.passWord:}")
+    @Value("${nglog.es.passWord:}")
     private String esPassWord;
-    @Value("${plumelog.es.shards:5}")
+    @Value("${nglog.es.shards:5}")
     private int shards;
-    @Value("${plumelog.es.replicas:1}")
+    @Value("${nglog.es.replicas:1}")
     private int replicas;
-    @Value("${plumelog.es.refresh.interval:60s}")
+    @Value("${nglog.es.refresh.interval:60s}")
     private String refreshInterval;
-    @Value("${plumelog.es.indexType.model:day}")
+    @Value("${nglog.es.indexType.model:day}")
     private String indexTypeModel;
-    @Value("${plumelog.es.indexType.zoneId:GMT+8}")
+    @Value("${nglog.es.indexType.zoneId:GMT+8}")
     private String indexTypeZoneId;
-    @Value("${plumelog.redis.redisHost:127.0.0.1:6379}")
+    @Value("${nglog.redis.redisHost:127.0.0.1:6379}")
     private String redisHost;
-    @Value("${plumelog.redis.redisPassWord:}")
+    @Value("${nglog.redis.redisPassWord:}")
     private String redisPassWord;
-    @Value("${plumelog.redis.redisDb:0}")
+    @Value("${nglog.redis.redisDb:0}")
     private int redisDb = 0;
-    @Value("${plumelog.rest.restUrl:}")
+    @Value("${nglog.rest.restUrl:}")
     private String restUrl;
-    @Value("${plumelog.rest.restUserName:}")
+    @Value("${nglog.rest.restUserName:}")
     private String restUserName;
-    @Value("${plumelog.rest.restPassWord:}")
+    @Value("${nglog.rest.restPassWord:}")
     private String restPassWord;
     @Value("${login.username:}")
     private String loginUsername;
     @Value("${login.password:}")
     private String loginPassword;
 
-    @Value("${plumelog.queue.redis.redisHost:''}")
+    @Value("${nglog.queue.redis.redisHost:''}")
     private String queueRedisHost;
-    @Value("${plumelog.queue.redis.sentinel.masterName:''}")
+    @Value("${nglog.queue.redis.sentinel.masterName:''}")
     private String queueRedisSentinelMasterName;
-    @Value("${plumelog.queue.redis.redisPassWord:}")
+    @Value("${nglog.queue.redis.redisPassWord:}")
     private String queueRedisPassWord;
-    @Value("${plumelog.queue.redis.redisDb:0}")
+    @Value("${nglog.queue.redis.redisDb:0}")
     private int queueRedisDb = 0;
 
     @Value("${admin.log.keepDays:0}")
